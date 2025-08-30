@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="todo">TODO</string>
+    <string name="todo_per">TODO</string>
+    <string name="q1_enter_your_age">Q1.What Is Your Age ?</string>
+</resources>

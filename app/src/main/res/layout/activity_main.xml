@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#454545"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="#454545"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="10dp"
+            app:cardBackgroundColor="#83837B"
+            app:cardCornerRadius="40dp">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="45dp"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@mipmap/dep_2_foreground" />
+
+            <Button
+                android:id="@+id/depression_btn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center"
+                android:backgroundTint="#454545"
+                android:textSize="11sp"
+                android:text="@string/take_depression_test"
+                android:textColor="@color/white">
+
+            </Button>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+        android:background="#83837B"
+        android:textAlignment="center"
+        android:text="Machine Learning-based Test" />
+
+
+
+    <!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:layout_width="286dp"-->
+<!--        android:layout_height="211dp"-->
+<!--        android:layout_marginStart="250dp"-->
+<!--        android:layout_marginTop="730dp"-->
+<!--        android:background="#454545"-->
+<!--        android:src="@drawable/tree" />-->
+
+</RelativeLayout>

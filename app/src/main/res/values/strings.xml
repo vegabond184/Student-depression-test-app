@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Depression test</string>
+    <string name="take_personality_test">Take Personality Test</string>
+    <string name="take_depression_test">Take Depression Test</string>
+    <string name="todo">TODO</string>
+    <string name="todo_per">TODO</string>
+    <string name="q1_enter_your_age">Q1.What Is Your Age ?</string>
+    <string name="depression_test_result">Depression Test Result</string>
+    <string name="this_test_is_completely_based_on_machine_learning_it_can_only_predict_the_possibility_of_you_have_depression_in_future">This test is completely based on machine learning. It can only predict the possibility of you having depression in future</string>
+</resources>

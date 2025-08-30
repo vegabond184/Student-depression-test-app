@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#454545"
+    tools:context=".depression_info">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:background="#83837B"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:text="@string/app_name"
+                android:textSize="30sp" />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                app:cardBackgroundColor="#979790"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="50dp">
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Age"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:minHeight="48dp" />
+
+                <TextView
+                    android:id="@+id/rf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/q1_enter_your_age"
+                    android:textSize="25sp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#979790"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="50dp">
+
+                <TextView
+                    android:id="@+id/pl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Q2.What is your gender ?"
+                    android:textSize="25sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/gender_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="20dp">
+
+                    <!--radio buttons-->
+                    <RadioButton
+                        android:id="@+id/boy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:backgroundTint="#979790"
+                        android:textColor="@color/black"
+                        android:text="Male"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/girl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:backgroundTint="#979790"
+                        android:textColor="@color/black"
+                        android:text="Female"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#979790"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="50dp">
+
+                <EditText
+                    android:id="@+id/academic_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Example: 2"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:text="Q3.Academic Pressure"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="60dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="(between 1 to 5)"
+                    android:textSize="25sp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#979790"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="50dp">
+
+                <RadioGroup
+                    android:id="@+id/histroy_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="20dp">
+
+                    <!--radio buttons-->
+                    <RadioButton
+                        android:id="@+id/yes2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:backgroundTint="#979790"
+                        android:textColor="@color/black"
+                        android:text="Yes"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/no2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:backgroundTint="#979790"
+                        android:textColor="@color/black"
+                        android:text="No"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+
+
+<!--                <EditText-->
+<!--                    android:id="@+id/city_name"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Example: Delhi"-->
+<!--                    android:inputType="textPersonName" />-->
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:text="Q4.Family history of mental illness"
+                    android:textSize="25sp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#979790"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="50dp">
+
+                <EditText
+                    android:id="@+id/study_satisfaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:ems="10"
+                    android:hint="Example: 2"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/study"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Q5.Study Satisfaction ?"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/range_study"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="60dp"
+                    android:text="(between 1 to 5)"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#979790"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="50dp">
+
+                <EditText
+                    android:id="@+id/work_study"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:hint="Example: 3"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/study_houres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Q6.how long do you study?"
+                    android:textSize="25sp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#979790"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="50dp">
+
+                <EditText
+                    android:id="@+id/financial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:hint="Example: 5"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/finalcial_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/black"
+                    android:text="Q7.Financial Tension"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/range_financial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="(between 1 to 5)"
+                    android:textSize="25sp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#979790"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="50dp">
+
+                <TextView
+                    android:id="@+id/sleep_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Q8.How long do you sleep ?"
+                    android:textSize="25sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/sleep_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="45dp">
+
+                    <!--radio buttons-->
+                    <RadioButton
+                        android:id="@+id/less_then_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:backgroundTint="#979790"
+                        android:text="Less than 5 hours"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/hours_5_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:backgroundTint="#979790"
+                        android:layout_marginBottom="10dp"
+                        android:text="5-6 hours"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/hours_7_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="7-8 hours"
+                        android:textStyle="bold"
+                        android:backgroundTint="#979790"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/hours_more_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:backgroundTint="#979790"
+                        android:layout_marginBottom="10dp"
+                        android:text="More than 8 hours"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#979790"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="50dp">
+
+                <TextView
+                    android:id="@+id/dite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Q9.Dietary Habits ?"
+                    android:textSize="25sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/dite_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="25dp">
+
+                    <!--radio buttons-->
+                    <RadioButton
+                        android:id="@+id/Healthy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:backgroundTint="#979790"
+                        android:text="Healthy"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/Moderate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#979790"
+                        android:textColor="@color/black"
+                        android:text="Moderate"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/Unhealthy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#979790"
+                        android:textColor="@color/black"
+                        android:text="Unhealthy"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#979790"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="50dp">
+
+                <TextView
+                    android:id="@+id/su"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Q10.Suicidal Thought ?"
+                    android:textSize="25sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/su_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="40dp">
+
+                    <!--radio buttons-->
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textStyle="bold"
+                        android:backgroundTint="#979790"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textStyle="bold"
+                        android:backgroundTint="#979790"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+
+
+                </RadioGroup>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="serif-monospace"
+                android:backgroundTint="#979790"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="Submit Test" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+<!--    age,academic_pressure,study_satisfaction,work_study,financial,-->
+<!--    genderencode,cityencode,suicidalencoded,sleep,dietary-->
