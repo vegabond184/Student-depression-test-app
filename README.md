@@ -18,15 +18,15 @@ It should **not** be used as a substitute for professional medical advice, diagn
 
 ## 🛠️ Tech Stack
 - **Programming Language**: Java  
-- **Frameworks/Libraries**: scikit-learn, pandas, numpy, matplotlib (add any others you used)  
-- **Frontend/UI**: (Android App In Java)  
+- **Frontend/UI**: (Android App In Java)
+- **Backend**: https://github.com/vegabond184/ML-depressiontest
 
 ---
 
 ## 🚀 Getting Started
 
 ### 1. Download apk
- https://github.com/vegabond184/Student-depression-test-app/
+ https://github.com/vegabond184/Student-depression-test-app/blob/master/apk/depression-test.apk
 
 ### 1. Clone the Repository
 ```bash
