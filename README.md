@@ -26,7 +26,7 @@ It should **not** be used as a substitute for professional medical advice, diagn
 ## 🚀 Getting Started
 
 ### 1. Download apk
- https://github.com/vegabond184/Student-depression-test-app/blob/master/apk/depression-test.apk
+ https://github.com/vegabond184/Student-depression-test-app/releases/download/app/app-debug.apk
 
 ### 1. Clone the Repository
 ```bash
